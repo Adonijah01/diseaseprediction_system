@@ -1,11 +1,5 @@
 # Nairobi Hospital Disease Prediction System
 
-**School of Technology**  
-**Bachelor of Science in Data Science**  
-**NAME:** Cherotich Laura  
-**REG NO:** 23/08450  
-**SUPERVISOR:** Ernest Madara
-
 ---
 
 ## Project Overview
@@ -61,38 +55,7 @@ Agile approach in four phases:
 3. User interface building
 4. Final integration, testing, documentation
 
-## Budget and Resources
-| Item                      | Description                  | Estimated Cost | Actual Cost |
-|---------------------------|------------------------------|---------------|-------------|
-| Laptop (existing)         | Development/testing          | Ksh.0         | Ksh.0       |
-| Internet access           | Research/development         | Ksh.          | Ksh.        |
-| External storage/backup   | Flash drive/cloud storage    | Ksh.          | Ksh.        |
-| Software (Python, Jupyter)| Free open-source tools       | Ksh.0         | Ksh.0       |
-| Printing & Binding        | Final report                 | Ksh.          | Ksh.        |
-| **Total**                 |                              | Ksh.          | Ksh.        |
 
-## Project Schedule
-| Task No. | Description                              | Start Date | Completion Date |
-|----------|------------------------------------------|------------|-----------------|
-| 1        | Proposal writing and submission           |            |                 |
-| 2        | Approval and planning                    |            |                 |
-| 3        | Data collection from Nairobi Hospital     |            |                 |
-| 4        | Data cleaning and preprocessing          |            |                 |
-| 5        | Exploratory Data Analysis                |            |                 |
-| 6        | Software Requirement Specification (SRS) |            |                 |
-| 7        | Software Design Specification (SDS)      |            |                 |
-| 8        | Model development and training           |            |                 |
-| 9        | Model evaluation and refinement          |            |                 |
-| 10       | User Interface design and development    |            |                 |
-| 11       | System integration and final testing     |            |                 |
-| 12       | Report writing, documentation, submission|            |                 |
-
-## References
-- Shrestha & Chatterjee (2019): HDP model for disease prediction
-- Srivastava & Singh (2022): ML framework for common diseases
-- Jindal et al. (2021): Model for effective treatment with fewer tests
-- Heller et al. (1984): Predictive value in coronary heart disease
-- Cáceres & Paccanaro (2019): ChADoGAN for disease gene prediction
 
 ## Usage
 1. Activate your virtual environment:
