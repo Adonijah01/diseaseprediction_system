@@ -1,8 +1,3 @@
-"""
-Created on Thu Sep 14 13:00:00 2023
-
-@author: samagra shrivastava
-"""
 
 import hashlib
 import streamlit as st
@@ -915,12 +910,6 @@ if selected == 'AIDS Prediction':
 if selected == 'About':
     st.title('About the Project')
     st.markdown('''
-**School of Technology**  
-**Bachelor of Science in Data Science**  
-**Project:** Nairobi Hospital Disease Prediction System  
-**Student:** Cherotich Laura  
-**Reg No:** 23/08450  
-**Supervisor:** Ernest Madara
 
 ---
 
@@ -939,11 +928,4 @@ This system uses machine learning to predict diseases (Diabetes, Heart Disease, 
 - Model development and testing
 - User interface building
 - Final integration, testing, and documentation
-
-#### References
-- Shrestha & Chatterjee (2019)
-- Srivastava & Singh (2022)
-- Jindal et al. (2021)
-- Heller et al. (1984)
-- Cáceres & Paccanaro (2019)
     ''')
