@@ -1,4 +1,3 @@
-
 """
 Complete Disease Prediction System with Enhanced Email Verication
 Enhanced with email verification by: Assistant
@@ -1710,6 +1709,28 @@ elif st.session_state.logged_in and selected == 'Admin':
             st.info(f"Admin Email: {ADMIN_EMAIL}")
             st.info(f"SMTP Server: {SMTP_SERVER}:{SMTP_PORT}")
             st.info(f"Email Status: {'✅ Configured' if ADMIN_PASSWORD != 'your_app_password_here' else '❌ Not Configured'}")
+
+        # --- All Predictions Table ---
+        st.markdown('<h4 style="color:#e63946;">🩺 All Predictions (Most Recent First)</h4>', unsafe_allow_html=True)
+        all_predictions = load_predictions()
+        predictions_list = []
+        for username, predictions in all_predictions.items():
+            for pred in predictions:
+                predictions_list.append({
+                    'Doctor': username,
+                    'Disease': pred.get('disease', ''),
+                    'Result': pred.get('result', ''),
+                    'Timestamp': pred.get('timestamp', ''),
+                    'Patient': pred.get('features', {}).get('Patient Name', 'N/A') if isinstance(pred.get('features', {}), dict) else 'N/A'
+                })
+        if predictions_list:
+            df_preds = pd.DataFrame(predictions_list)
+            df_preds = df_preds.sort_values('Timestamp', ascending=False)
+            st.dataframe(df_preds, use_container_width=True)
+        else:
+            st.info('No predictions found.')
+
+        st.markdown('<hr>', unsafe_allow_html=True)
 
 # Load ML Models
 current_dir = os.path.dirname(os.path.abspath(__file__))
